@@ -1,0 +1,174 @@
+V "GNAT Lib v15"
+M P W=b
+A -gnatA
+A -gnatwa
+A -gnat2022
+A -mmacosx-version-min=14.0
+A -mcpu=apple-m1
+A -mlittle-endian
+A -mabi=lp64
+A -fPIC
+P SS ZX
+
+RN
+RV NO_IO
+RV NO_LOCAL_ALLOCATORS
+RV NO_RECURSION
+RV NO_SECONDARY_STACK
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+
+U sml_example%b		sml_example.adb		d846e1f1 NE OO SU
+W ada%s			ada.ads			ada.ali
+Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+W sml%s			sml.ads			sml.ali
+W sml.dom%s		sml-dom.adb		sml-dom.ali
+W sml.dom.builder%s	sml-dom-builder.adb	sml-dom-builder.ali
+W sml.dom.parser%s	sml-dom-parser.adb	sml-dom-parser.ali
+W sml.dom.writer%s	sml-dom-writer.adb	sml-dom-writer.ali
+Z system.concat_4%s	s-conca4.adb		s-conca4.ali
+Z system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+
+D ada.ads		20250419085653 76789da1 ada%s
+D a-except.ads		20250419085653 e7970cd9 ada.exceptions%s
+D a-ioexce.ads		20250419085653 40018c65 ada.io_exceptions%s
+D a-stream.ads		20250419085653 17477cbd ada.streams%s
+D a-string.ads		20250419085653 90ac6797 ada.strings%s
+D a-sttebu.ads		20250419085653 f1ad67a2 ada.strings.text_buffers%s
+D a-stuten.ads		20250419085653 c6ced0ae ada.strings.utf_encoding%s
+D a-tags.ads		20250419085653 fbca0ad5 ada.tags%s
+D a-textio.ads		20250419085653 34ef47de ada.text_io%s
+D a-unccon.ads		20250419085653 0e9b276f ada.unchecked_conversion%s
+D interfac.ads		20250419085653 9111f9c1 interfaces%s
+D i-cstrea.ads		20250419085653 ffd01b9d interfaces.c_streams%s
+D sml.ads		20251021124920 2aa5c9b7 sml%s
+D sml-dom.ads		20251021134856 1a9f27b9 sml.dom%s
+D sml-dom-builder.ads	20251021134856 cf1d6552 sml.dom.builder%s
+D sml-dom-parser.ads	20251021134856 239d75bc sml.dom.parser%s
+D sml-dom-writer.ads	20251021134856 58e867ed sml.dom.writer%s
+D sml-memory_model.ads	20251021134856 b73b376a sml.memory_model%s
+D sml-schema.ads	20251021134856 12041dbe sml.schema%s
+D sml-utf8.ads		20251021134856 a6bcc4c3 sml.utf8%s
+D sml_example.adb	20251022203449 425ef695 sml_example%b
+D system.ads		20250419085653 70765b54 system%s
+D s-conca4.ads		20250419085653 33f85f3e system.concat_4%s
+D s-crtl.ads		20250419085653 beb39b9e system.crtl%s
+D s-exctab.ads		20250419085653 91bef6ef system.exception_table%s
+D s-ficobl.ads		20250419085653 dc5161d4 system.file_control_block%s
+D s-parame.ads		20250419085653 3597fc11 system.parameters%s
+D s-putima.ads		20250419085653 17291fe4 system.put_images%s
+D s-secsta.ads		20250419085653 578279f5 system.secondary_stack%s
+D s-soflin.ads		20250419085653 5d88fdea system.soft_links%s
+D s-stache.ads		20250419085653 0b81c1fe system.stack_checking%s
+D s-stalib.ads		20250419085653 1c9580f6 system.standard_library%s
+D s-stoele.ads		20250419085653 ccded4e8 system.storage_elements%s
+D s-traent.ads		20250419085653 c81cbf8c system.traceback_entries%s
+D s-unstyp.ads		20250419085653 fa2a7f59 system.unsigned_types%s
+D s-wchcon.ads		20250419085653 d9032363 system.wch_con%s
+G a e
+G c Z b b [sml_example standard 9 11 none]
+G r c none [sml_example standard 9 11 none] [parse sml__dom__parser 60 13 none]
+G r c none [sml_example standard 9 11 none] [root sml__dom 45 13 none]
+G r c none [sml_example standard 9 11 none] [kind sml__dom 105 13 none]
+G r c none [sml_example standard 9 11 none] [name sml__dom 111 13 none]
+G r c none [sml_example standard 9 11 none] [first_child sml__dom 64 13 none]
+G r c none [sml_example standard 9 11 none] [next_sibling sml__dom 74 13 none]
+G r c none [sml_example standard 9 11 none] [text_value sml__dom 121 13 none]
+G r c none [sml_example standard 9 11 none] [create_document sml__dom__builder 21 13 none]
+G r c none [sml_example standard 9 11 none] [add_child_element sml__dom__builder 39 14 none]
+G r c none [sml_example standard 9 11 none] [add_text_node sml__dom__builder 64 14 none]
+G r c none [sml_example standard 9 11 none] [serialize sml__dom__writer 22 13 none]
+G r c none [sml_example standard 9 11 none] [serialize_formatted sml__dom__writer 26 13 none]
+G r c none [sml_example standard 9 11 none] [set_text_content sml__dom__builder 90 14 none]
+G r c none [sml_example standard 9 11 none] [set_element_name sml__dom__builder 106 14 none]
+G r c none [sml_example standard 9 11 none] [delete_node sml__dom__builder 130 14 none]
+X 1 ada.ads
+18K9*Ada 22e8 21|3r6 10r8
+X 9 a-textio.ads
+58K13*Text_IO 785e16 21|3w10 10r12
+284U14*New_Line 21|49s7 57s7 68s7 75s7 78s7 91s7 98s7 107s7 110s7 118s7 121s7
+. 132s10 140s7 147s4
+565U14*Put_Line 21|23s13 29s13 31s13 48s7 51s10 52s10 55s10 67s7 73s7 74s7
+. 76s7 77s7 90s7 96s7 97s7 99s7 101s7 103s7 106s7 108s7 109s7 117s7 119s7
+. 120s7 123s10 130s10 131s10 134s13 135s13 137s13 144s4 145s4 146s4 152s4
+. 153s4 154s4
+X 13 sml.ads
+7K9*SML 36e8 21|4r6 5r6 6r6 7r6 11r13 12r13 14r32 15r33 19r16 21r12 22r15
+. 23r38 24r22 25r28 27r25 29r39 30r15 31r44 46r25 46r56 53r34 61r16 61r36
+. 62r16 63r16 64r16 65r16 69r7 69r47 70r7 71r7 71r47 72r7 74r17 77r17 82r18
+. 82r38 83r27 83r46 84r18 85r18 86r18 87r19 88r18 92r7 93r7 94r7 95r7 97r17
+. 100r7 102r7 104r7 105r7 109r17 115r26 115r57 127r38 128r29 128r60
+X 14 sml-dom.ads
+10K13*DOM 251e12 21|4w10 5r10 6r10 7r10 11r17 12r17 14r36 15r37 19r20 21r16
+. 22r19 23r42 24r26 25r32 27r29 29r43 30r19 31r48 46r29 46r60 53r38 61r20
+. 61r40 62r20 63r20 64r20 65r20 69r11 69r51 70r11 71r11 71r51 72r11 74r21
+. 77r21 82r22 82r42 83r31 83r50 84r22 85r22 86r22 87r23 88r22 92r11 93r11
+. 94r11 95r11 97r21 100r11 102r11 104r11 105r11 109r21 115r30 115r61 127r42
+. 128r33 128r64
+20E9*Node_Kind 20e37 21|12r21
+20n23*Element{20E9} 21|22r23
+20n32*Text{20E9} 21|30r23
+25R9*Document 236e4 21|14r40 61r24 82r26
+29I9*Node_Id<integer> 21|11r21 15r41 19r24 62r24 63r24 64r24 65r24 83r35
+. 84r26 85r26 86r26 87r27 88r26
+32i4*Null_Node{29I9} 21|25r36
+45V13*Root{29I9} 21|53s42 69s55 71s55 83s54
+64V13*First_Child{29I9} 21|24s30
+74V13*Next_Sibling{29I9} 21|27s33
+105V13*Kind{20E9} 21|21s20
+111V13*Name{string} 21|23s46 29s47
+121V13*Text_Value{string} 21|31s52
+X 15 sml-dom-builder.ads
+8K17*Builder 191e20 21|6w14 61r44 69r15 70r15 71r15 72r15 82r46 92r15 93r15
+. 94r15 95r15 100r15 102r15 104r15 105r15
+21V13*Create_Document{14|25R9} 21|61s52 82s54
+39U14*Add_Child_Element 21|69s23 71s23 92s23 94s23 105s23
+64U14*Add_Text_Node 21|70s23 72s23 93s23 95s23
+90U14*Set_Text_Content 21|100s23
+106U14*Set_Element_Name 21|102s23
+130U14*Delete_Node 21|104s23
+X 16 sml-dom-parser.ads
+10K17*Parser 261e19 21|5w14 46r33 46r64 115r34 115r65 128r37 128r68
+45R9*Parse_Result 53e14 21|46r40 115r41 128r44
+45b23*Success{boolean} 21|50r17 122r22 133r21
+48r13*Doc{14|25R9} 21|53r29 53r55 127r72
+60V13*Parse{45R9} 21|46s71 115s72 128s75
+X 17 sml-dom-writer.ads
+9K17*Writer 40e19 21|7w14 74r25 77r25 97r25 109r25 127r46
+22V13*Serialize{string} 21|74s32 97s32 109s32 127s53
+26V13*Serialize_Formatted{string} 21|77s32
+X 21 sml_example.adb
+9U11*SML_Example 9b11 155l5 155t16
+14U14 Print_Tree 14b14 14>26 15>26 16>26 26s16 33l8 33t18 53s10
+14r26 Doc{14|25R9} 21r26 23r52 24r43 26r28 27r47 29r53 31r64
+15i26 Node{14|29I9} 21r31 23r57 24r48 29r58 31r69
+16i26 Indent{natural} 18r38 26r40
+18a7 Spaces{string} 23r23 29r23 31r23
+19i7 Child{14|29I9} 24m13 25r19 26r33 27m16 27r52
+35U14 Example_Parse_And_Traverse 35b14 58l8 58t34 148s4
+36a7 Sample{string} 46r78
+46r7 Result{16|45R9} 50r10 53r22 53r48
+60U14 Example_Build_From_Scratch 60b14 79l8 79t34 149s4
+61r7 Doc{14|25R9} 69m42 69r42 69r61 70m38 70r38 71m42 71r42 71r61 72m38 72r38
+. 74r43 77r53
+62i7 Item1{14|29I9} 69m75 70r43
+63i7 Item2{14|29I9} 71m75 72r43
+64i7 Text1{14|29I9} 70m58
+65i7 Text2{14|29I9} 72m57
+81U14 Example_Modify_DOM 81b14 111l8 111t26 150s4
+82r7 Doc{14|25R9} 83r60 92m42 92r42 93m38 93r38 94m42 94r42 95m38 95r38 97r43
+. 100m41 100r41 102m41 102r41 104m36 104r36 105m42 105r42 109r43
+83i7 Root{14|29I9} 92r47 94r47 105r47
+84i7 Old_El{14|29I9} 92m60 93r43 102r46
+85i7 Temp_El{14|29I9} 94m61 95r43 104r41
+86i7 Old_Text{14|29I9} 93m59 100r46
+87i7 Temp_Text{14|29I9} 95m65
+88i7 New_El{14|29I9} 105m60
+113U14 Example_Round_Trip 113b14 141l8 141t26 151s4
+114a7 Input{string} 115r79 120r17
+115r7 Result1{16|45R9} 122r14 127r64
+127a10 Output{string} 128r82 131r20
+128r10 Result2{16|45R9} 133r13
+

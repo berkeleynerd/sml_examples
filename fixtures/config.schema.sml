@@ -1,0 +1,39 @@
+<schema>
+  <simpleType>
+    <name>portType</name>
+    <restriction>
+      <base>integer</base>
+      <minValue>1</minValue>
+      <maxValue>65535</maxValue>
+    </restriction>
+  </simpleType>
+
+  <complexType>
+    <name>databaseType</name>
+    <sequence>
+      <element>
+        <name>host</name>
+        <type>string</type>
+      </element>
+      <element>
+        <name>port</name>
+        <type>portType</type>
+      </element>
+    </sequence>
+  </complexType>
+
+  <complexType>
+    <name>configType</name>
+    <sequence>
+      <element>
+        <name>database</name>
+        <type>databaseType</type>
+      </element>
+    </sequence>
+  </complexType>
+
+  <element>
+    <name>config</name>
+    <type>configType</type>
+  </element>
+</schema>

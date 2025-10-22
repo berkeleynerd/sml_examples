@@ -1,0 +1,166 @@
+V "GNAT Lib v15"
+M P W=b
+A -gnatA
+A -gnatwa
+A -gnat2022
+A -mmacosx-version-min=14.0
+A -mcpu=apple-m1
+A -mlittle-endian
+A -mabi=lp64
+A -fPIC
+P SS ZX
+
+RN
+RV NO_IO
+RV NO_LOCAL_ALLOCATORS
+RV NO_SECONDARY_STACK
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+
+U test_schema_loader%b	test_schema_loader.adb	a61a19d4 NE OO SU
+W ada%s			ada.ads			ada.ali
+Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+W sml%s			sml.ads			sml.ali
+W sml.dom%s		sml-dom.adb		sml-dom.ali
+W sml.dom.parser%s	sml-dom-parser.adb	sml-dom-parser.ali
+W sml.io%s		sml-io.adb		sml-io.ali
+W sml.schema%s		sml-schema.adb		sml-schema.ali
+W sml.schema.loader%s	sml-schema-loader.adb	sml-schema-loader.ali
+Z system.concat_2%s	s-conca2.adb		s-conca2.ali
+Z system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+
+D ada.ads		20250419085653 76789da1 ada%s
+D a-except.ads		20250419085653 e7970cd9 ada.exceptions%s
+D a-ioexce.ads		20250419085653 40018c65 ada.io_exceptions%s
+D a-stream.ads		20250419085653 17477cbd ada.streams%s
+D a-string.ads		20250419085653 90ac6797 ada.strings%s
+D a-sttebu.ads		20250419085653 f1ad67a2 ada.strings.text_buffers%s
+D a-stuten.ads		20250419085653 c6ced0ae ada.strings.utf_encoding%s
+D a-tags.ads		20250419085653 fbca0ad5 ada.tags%s
+D a-textio.ads		20250419085653 34ef47de ada.text_io%s
+D a-unccon.ads		20250419085653 0e9b276f ada.unchecked_conversion%s
+D interfac.ads		20250419085653 9111f9c1 interfaces%s
+D i-cstrea.ads		20250419085653 ffd01b9d interfaces.c_streams%s
+D sml.ads		20251021124920 2aa5c9b7 sml%s
+D sml-dom.ads		20251021134856 1a9f27b9 sml.dom%s
+D sml-dom-parser.ads	20251021134856 239d75bc sml.dom.parser%s
+D sml-io.ads		20251022202538 4a97837e sml.io%s
+D sml-memory_model.ads	20251021134856 b73b376a sml.memory_model%s
+D sml-schema.ads	20251021134856 12041dbe sml.schema%s
+D sml-schema-loader.ads	20251022203620 8316a91d sml.schema.loader%s
+D sml-utf8.ads		20251021134856 a6bcc4c3 sml.utf8%s
+D system.ads		20250419085653 70765b54 system%s
+D s-conca2.ads		20250419085653 b5fb73f7 system.concat_2%s
+D s-crtl.ads		20250419085653 beb39b9e system.crtl%s
+D s-exctab.ads		20250419085653 91bef6ef system.exception_table%s
+D s-ficobl.ads		20250419085653 dc5161d4 system.file_control_block%s
+D s-parame.ads		20250419085653 3597fc11 system.parameters%s
+D s-putima.ads		20250419085653 17291fe4 system.put_images%s
+D s-secsta.ads		20250419085653 578279f5 system.secondary_stack%s
+D s-soflin.ads		20250419085653 5d88fdea system.soft_links%s
+D s-stache.ads		20250419085653 0b81c1fe system.stack_checking%s
+D s-stalib.ads		20250419085653 1c9580f6 system.standard_library%s
+D s-stoele.ads		20250419085653 ccded4e8 system.storage_elements%s
+D s-traent.ads		20250419085653 c81cbf8c system.traceback_entries%s
+D s-unstyp.ads		20250419085653 fa2a7f59 system.unsigned_types%s
+D s-wchcon.ads		20250419085653 d9032363 system.wch_con%s
+D test_schema_loader.adb  20251022205213 70723bd2 test_schema_loader%b
+G a e
+G c Z b b [test_schema_loader standard 10 11 none]
+G r c none [test_schema_loader standard 10 11 none] [parse sml__dom__parser 60 13 none]
+G r c none [test_schema_loader standard 10 11 none] [load_schema sml__schema__loader 19 13 none]
+G r c none [test_schema_loader standard 10 11 none] [to_string sml__schema 313 13 none]
+G r c none [test_schema_loader standard 10 11 none] [parse_file sml__io 48 13 none]
+G r c none [test_schema_loader standard 10 11 none] [validate_document sml__schema 254 13 none]
+X 1 ada.ads
+18K9*Ada 22e8 36|3r6 11r8
+X 9 a-textio.ads
+58K13*Text_IO 785e16 36|3w10 11r12
+515U14*Put 36|38s7 75s7 115s7 155s7 186s7 234s7 262s7 291s7 313s7
+565U14*Put_Line 36|43s13 50s16 55s7 80s13 87s16 92s7 120s13 127s16 132s7
+. 160s13 167s16 172s7 191s13 198s16 203s7 239s13 246s16 251s7 267s13 274s16
+. 279s7 296s13 303s16 308s7 320s13 327s16 337s19 345s22 347s22 356s4 366s4
+X 13 sml.ads
+7K9*SML 36e8 36|4r6 5r6 6r6 7r6 8r6 12r8 13r8 40r34 40r65 77r34 77r65 117r34
+. 117r65 157r34 157r65 188r34 188r65 236r34 236r65 264r34 264r65 293r34 293r65
+. 316r34 317r12 331r37 332r18 333r39 334r18
+X 14 sml-dom.ads
+10K13*DOM 251e12 36|4w10 5r10 40r38 40r69 77r38 77r69 117r38 117r69 157r38
+. 157r69 188r38 188r69 236r38 236r69 264r38 264r69 293r38 293r69 316r38 331r41
+. 333r43
+X 15 sml-dom-parser.ads
+10K17*Parser 261e19 36|5w14 40r42 40r73 77r42 77r73 117r42 117r73 157r42
+. 157r73 188r42 188r73 236r42 236r73 264r42 264r73 293r42 293r73 316r42 331r45
+. 333r47
+45R9*Parse_Result 53e14 36|40r49 77r49 117r49 157r49 188r49 236r49 264r49
+. 293r49 316r49 331r52 333r54
+45b23*Success{boolean} 36|42r30 79r30 119r30 159r30 190r30 238r30 266r30
+. 295r30 319r30 336r33 336r65
+48r13*Doc{14|25R9} 36|47r84 84r84 124r84 164r84 195r84 243r84 271r84 300r84
+. 324r84 341r103 342r105
+60V13*Parse{45R9} 36|40s80 77s80 117s80 157s80 188s80 236s80 264s80 293s80
+X 16 sml-io.ads
+10K13*IO 101e11 36|8w10 317r16 332r22 334r22
+48V13*Parse_File{15|45R9} 36|317s19 332s25 334s25
+X 18 sml-schema.ads
+9K13*Schema 401e15 36|6w10 7r10 12r12 13r12
+66n31*Valid{66E9} 36|344r34
+66n38*Invalid{66E9} 36|344r61
+69R9*Validation_Result 80e14 36|341r33 342r33
+69e28*Status{66E9} 36|344r25 344r52
+254V13*Validate_Document{69R9} 36|341s54 342s54
+313V13*To_String{string} 36|50s39 87s39 127s39 167s39 198s39 246s39 327s62
+X 19 sml-schema-loader.ads
+5K20*Loader 58e22 36|7w17 13r19
+10R9*Schema_Load_Result 17e14 36|47r36 84r36 124r36 164r36 195r36 243r36
+. 271r36 300r36 324r36
+10b29*Success{boolean} 36|49r32 86r32 126r32 166r32 197r32 245r32 273r28
+. 302r28 326r32
+12r24*Schema{18|192R9} 36|341r85 342r85
+14r13*Error_Message{18|48R9} 36|50r62 87r62 127r62 167r62 198r62 246r62 327r85
+19V13*Load_Schema{10R9} 36|47s58 84s58 124s58 164s58 195s58 243s58 271s58
+. 300s58 324s58
+X 36 test_schema_loader.adb
+10U11*Test_Schema_Loader 10b11 367l5 367t23
+15U14 Test_Integer_Simple_Type 25b14 56l8 56t32 357s4
+16U14 Test_String_Enum_Type 58b14 93l8 93t29 358s4
+17U14 Test_Complex_Sequence_Type 95b14 133l8 133t34 359s4
+18U14 Test_Complex_Choice_Type 135b14 173l8 173t32 360s4
+19U14 Test_Element_Definition 175b14 204l8 204t31 361s4
+20U14 Test_Full_Schema 206b14 252l8 252t24 362s4
+21U14 Test_Missing_Name_Error 254b14 280l8 280t31 363s4
+22U14 Test_Unknown_Base_Type_Error 282b14 309l8 309t36 364s4
+23U14 Test_File_Based_Validation 311b14 353l8 353t34 365s4
+26a7 Schema_SML{string} 40r87
+40r10 Parse_Result{15|45R9} 42r17 47r71
+47r13 Load_Result{19|10R9} 49r20 50r50
+59a7 Schema_SML{string} 77r87
+77r10 Parse_Result{15|45R9} 79r17 84r71
+84r13 Load_Result{19|10R9} 86r20 87r50
+96a7 Schema_SML{string} 117r87
+117r10 Parse_Result{15|45R9} 119r17 124r71
+124r13 Load_Result{19|10R9} 126r20 127r50
+136a7 Schema_SML{string} 157r87
+157r10 Parse_Result{15|45R9} 159r17 164r71
+164r13 Load_Result{19|10R9} 166r20 167r50
+176a7 Schema_SML{string} 188r87
+188r10 Parse_Result{15|45R9} 190r17 195r71
+195r13 Load_Result{19|10R9} 197r20 198r50
+207a7 Schema_SML{string} 236r87
+236r10 Parse_Result{15|45R9} 238r17 243r71
+243r13 Load_Result{19|10R9} 245r20 246r50
+255a7 Schema_SML{string} 264r87
+264r10 Parse_Result{15|45R9} 266r17 271r71
+271r13 Load_Result{19|10R9} 273r16
+283a7 Schema_SML{string} 293r87
+293r10 Parse_Result{15|45R9} 295r17 300r71
+300r13 Load_Result{19|10R9} 302r16
+316r10 Schema_Parse{15|45R9} 319r17 324r71
+324r13 Schema_Load{19|10R9} 326r20 327r73 341r73 342r73
+331r16 Valid_Doc{15|45R9} 336r23 341r93
+333r16 Invalid_Doc{15|45R9} 336r53 342r93
+341r19 V1{18|69R9} 344r22
+342r19 V2{18|69R9} 344r49
+

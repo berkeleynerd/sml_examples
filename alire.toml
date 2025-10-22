@@ -1,0 +1,26 @@
+name = "sml_examples"
+description = "SML examples and integration demos"
+version = "0.1.0-dev"
+
+authors = ["Your Name"]
+maintainers = ["Your Name <example@example.com>"]
+licenses = "MIT OR Apache-2.0 WITH LLVM-exception"
+website = ""
+tags = ["sml", "examples", "schema", "io"]
+
+executables = ["sml_example", "schema_validation_example", "test_schema_loader"]
+
+[build-switches]
+"*".ada_version = "Ada2022"
+"*".style_checks = [
+  "-gnaty3",
+  "-gnatyM120",
+  "-gnatyB",
+  "-gnatyl",
+  "-gnatya",
+  "-gnatyO"
+]
+
+[dependencies]
+sml = "^0.1.0-dev"
+sml_io = "^0.1.0-dev"
