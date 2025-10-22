@@ -9,17 +9,18 @@ Example binaries and integration demos for the SML core library.
 ## Usage
 
 ```bash
-# Link local core + io during development
-alr develop --use ../sml --use ../sml_io
-
 # Build examples
 alr build
+# Or use GPR directly
 alr exec -- gprbuild -P examples.gpr
 
-# Run
-bin/sml_example
-bin/schema_validation_example
-bin/test_schema_loader  # looks in fixtures/
+# Run via Alire (picks env/pins)
+alr run sml_example
+alr run schema_validation_example
+alr run test_schema_loader  # looks in fixtures/
+
+# CI-style: run all examples as tests
+alr test
 ```
 
 ## Depend on these crates
@@ -27,7 +28,9 @@ bin/test_schema_loader  # looks in fixtures/
 alire.toml:
 
 ```toml
-[dependencies]
+[[depends-on]]
 sml = "^0.1.0"
+
+[[depends-on]]
 sml_io = "^0.1.0"
 ```
