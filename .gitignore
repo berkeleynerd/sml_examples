@@ -1,0 +1,22 @@
+/bin/
+/obj/
+/lib/
+/alire/
+/proof/
+/config/
+
+# SPARK proof session files
+proof/sessions/
+*.bak
+
+# SPARK/GNATprove output files
+gnatprove.log
+gnatprove_results.txt
+gnatprove.out
+proof.log
+
+# All gnatprove log files
+gnatprove*.log
+
+# Compiled binaries
+bin/

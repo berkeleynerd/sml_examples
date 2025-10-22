@@ -9,6 +9,7 @@ website = ""
 tags = ["sml", "examples", "schema", "io"]
 
 executables = ["sml_example", "schema_validation_example", "test_schema_loader"]
+project-files = ["examples.gpr"]
 
 [build-switches]
 "*".ada_version = "Ada2022"
@@ -21,6 +22,34 @@ executables = ["sml_example", "schema_validation_example", "test_schema_loader"]
   "-gnatyO"
 ]
 
-[dependencies]
+[[depends-on]]
 sml = "^0.1.0-dev"
+
+[[depends-on]]
 sml_io = "^0.1.0-dev"
+
+[[pins]]
+sml = { path = "../sml" }
+
+[[pins]]
+sml_io = { path = "../sml_io" }
+
+[[actions]]
+type = "test"
+name = "build-examples"
+command = ["alr", "exec", "--", "gprbuild", "-p", "-P", "examples.gpr", "-j0"]
+
+[[actions]]
+type = "test"
+name = "run-sml-example"
+command = ["bin/sml_example"]
+
+[[actions]]
+type = "test"
+name = "run-schema-validation"
+command = ["bin/schema_validation_example"]
+
+[[actions]]
+type = "test"
+name = "run-test-schema-loader"
+command = ["bin/test_schema_loader"]
