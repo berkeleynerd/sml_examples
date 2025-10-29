@@ -1,0 +1,6 @@
+dependency:sml=0.1.0-dev=3307e626334ff1a25479c14dc0e06285bffaf2b950235c66df4afded7343d919
+dependency:sml_io=0.1.0-dev=f0b39cd183c7dc312dd1ebad544ff60317b3fc25e8a7bc3eb1e7aa5dcc8be28c
+external:LIBRARY_TYPE=default
+external:TASK_TUTORIAL_TEST_LIBRARY_TYPE=default
+profile:task_tutorial_test=DEVELOPMENT
+switches:task_tutorial_test=-Og,-fdata-sections,-ffunction-sections,-g,-gnat2022,-gnatVa,-gnatW8,-gnatw.X,-gnatwa,-gnaty-d,-gnaty3,-gnatyA,-gnatyB,-gnatyI,-gnatyO,-gnatyS,-gnatya,-gnatyb,-gnatyc,-gnatye,-gnatyf,-gnatyh,-gnatyi,-gnatyk,-gnatyl,-gnatym,-gnatyn,-gnatyp,-gnatyr,-gnatyt,-gnatyu,-gnatyx

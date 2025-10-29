@@ -1,0 +1,6 @@
+dependency:sml=0.1.0-dev=3307e626334ff1a25479c14dc0e06285bffaf2b950235c66df4afded7343d919
+dependency:sml_io=0.1.0-dev=f0b39cd183c7dc312dd1ebad544ff60317b3fc25e8a7bc3eb1e7aa5dcc8be28c
+external:LESSON_5_ANALYSIS_LIBRARY_TYPE=default
+external:LIBRARY_TYPE=default
+profile:lesson_5_analysis=DEVELOPMENT
+switches:lesson_5_analysis=-Og,-fdata-sections,-ffunction-sections,-g,-gnat2022,-gnatVa,-gnatW8,-gnatw.X,-gnatwa,-gnaty-d,-gnaty3,-gnatyA,-gnatyB,-gnatyI,-gnatyO,-gnatyS,-gnatya,-gnatyb,-gnatyc,-gnatye,-gnatyf,-gnatyh,-gnatyi,-gnatyk,-gnatyl,-gnatym,-gnatyn,-gnatyp,-gnatyr,-gnatyt,-gnatyu,-gnatyx

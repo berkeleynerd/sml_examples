@@ -1,0 +1,25 @@
+name = "lesson_2_schema_validation"
+description = "Lesson 2: Schema Validation - Validate documents with schemas"
+version = "0.1.0"
+
+authors = ["SML Tutorial"]
+maintainers = ["SML Tutorial <tutorial@example.com>"]
+maintainers-logins = ["sml-tutorial"]
+licenses = "MIT"
+
+executables = ["lesson_1_basic_parsing", "lesson_2_schema_validation"]
+
+[build-switches]
+"*".ada_version = "Ada2022"
+
+[[depends-on]]
+sml = "*"
+
+[[depends-on]]
+sml_io = "*"
+
+[[pins]]
+sml = { path = "../../sml" }
+
+[[pins]]
+sml_io = { path = "../../sml_io" }

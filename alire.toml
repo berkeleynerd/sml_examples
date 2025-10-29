@@ -8,7 +8,7 @@ licenses = "MIT OR Apache-2.0 WITH LLVM-exception"
 website = ""
 tags = ["sml", "examples", "schema", "io"]
 
-executables = ["sml_example", "schema_validation_example", "test_schema_loader"]
+executables = ["sml_example", "schema_validation_example", "test_schema_loader", "task_manager_tutorial"]
 project-files = ["examples.gpr"]
 
 [build-switches]

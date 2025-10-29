@@ -1,0 +1,45 @@
+# Build directories
+bin/
+obj/
+
+# Alire build artifacts
+alire/alire.lock
+alire/flags/
+alire/build/
+alire/dependencies/
+alire/cache/
+
+# Generated config files
+config/
+
+# Generated output files
+*.sml
+!fixtures/*.sml
+
+# Ada build artifacts
+*.ali
+*.o
+*.bexch
+*.stdout
+*.stderr
+*.cswi
+
+# IDE and editor files
+.vscode/
+*.swp
+*~
+.DS_Store
+
+# Executable files (for Unix/Linux/macOS)
+lesson_*
+test_*
+!*.adb
+!*.ads
+
+# Windows executables
+*.exe
+
+# Backup files
+*.bak
+*.backup
+*.old

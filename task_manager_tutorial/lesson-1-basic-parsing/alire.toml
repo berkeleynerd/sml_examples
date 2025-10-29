@@ -1,0 +1,25 @@
+name = "lesson_1_basic_parsing"
+description = "Lesson 1: Basic SML Parsing - Parse documents and navigate DOM"
+version = "0.1.0"
+
+authors = ["SML Tutorial"]
+maintainers = ["SML Tutorial <tutorial@example.com>"]
+maintainers-logins = ["sml-tutorial"]
+licenses = "MIT"
+
+executables = ["lesson_1_basic_parsing"]
+
+[build-switches]
+"*".ada_version = "Ada2022"
+
+[[depends-on]]
+sml = "*"
+
+[[depends-on]]
+sml_io = "*"
+
+[[pins]]
+sml = { path = "../../sml" }
+
+[[pins]]
+sml_io = { path = "../../sml_io" }

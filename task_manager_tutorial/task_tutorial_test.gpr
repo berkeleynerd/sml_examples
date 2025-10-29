@@ -1,0 +1,25 @@
+with "config/task_tutorial_test_config.gpr";
+with "sml.gpr";
+with "sml_io.gpr";
+
+project Task_Tutorial_Test is
+
+   for Source_Dirs use ("src/", "config/");
+   for Object_Dir use "obj/" & Task_Tutorial_Test_Config.Build_Profile;
+   for Create_Missing_Dirs use "True";
+   for Exec_Dir use "bin";
+   for Main use ("task_tutorial_test.adb", "lesson_2_fixed.adb", "lesson_3_building.adb", "lesson_4_transformation.adb", "test_validation_final.adb", "test_validation_diagnostic.adb", "test_minimal_validation.adb", "debug_schema_loader.adb", "test_fix_verification.adb", "test_loader_vs_direct.adb");
+
+   package Compiler is
+      for Default_Switches ("Ada") use Task_Tutorial_Test_Config.Ada_Compiler_Switches & ("-gnat2022");
+   end Compiler;
+
+   package Binder is
+      for Switches ("Ada") use ("-Es"); --  Symbolic traceback
+   end Binder;
+
+   package Install is
+      for Artifacts (".") use ("share");
+   end Install;
+
+end Task_Tutorial_Test;

@@ -1,0 +1,51 @@
+<schema>
+  <simpleType>
+    <name>priorityType</name>
+    <restriction>
+      <base>integer</base>
+      <minValue>1</minValue>
+      <maxValue>5</maxValue>
+    </restriction>
+  </simpleType>
+
+  <simpleType>
+    <name>statusType</name>
+    <restriction>
+      <base>string</base>
+      <enumeration>
+        <value>todo</value>
+        <value>in_progress</value>
+        <value>done</value>
+      </enumeration>
+    </restriction>
+  </simpleType>
+
+  <element>
+    <name>task</name>
+    <complexType>
+      <sequence>
+        <element>
+          <name>id</name>
+          <type>string</type>
+        </element>
+        <element>
+          <name>title</name>
+          <type>string</type>
+        </element>
+        <element>
+          <name>priority</name>
+          <type>priorityType</type>
+        </element>
+        <element>
+          <name>status</name>
+          <type>statusType</type>
+        </element>
+        <element>
+          <name>completed</name>
+          <type>boolean</type>
+          <minOccurs>0</minOccurs>
+        </element>
+      </sequence>
+    </complexType>
+  </element>
+</schema>
