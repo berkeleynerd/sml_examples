@@ -2,10 +2,10 @@ name = "lesson_4_transformation"
 description = "Lesson 4: Document Transformation - Transform documents"
 version = "0.1.0"
 
-authors = ["SML Tutorial"]
-maintainers = ["SML Tutorial <tutorial@example.com>"]
-maintainers-logins = ["sml-tutorial"]
-licenses = "MIT"
+authors = ["Rebecca Wise"]
+maintainers = ["Rebecca Wise <rebecca@berkeleynerd.com>"]
+maintainers-logins = ["berkeleynerd"]
+licenses = "MIT OR Apache-2.0 WITH LLVM-exception"
 
 executables = ["lesson_1_basic_parsing", "lesson_2_schema_validation", "lesson_3_building", "lesson_4_transformation"]
 
@@ -13,13 +13,7 @@ executables = ["lesson_1_basic_parsing", "lesson_2_schema_validation", "lesson_3
 "*".ada_version = "Ada2022"
 
 [[depends-on]]
-sml = "*"
+sml = "=0.1.0"
 
 [[depends-on]]
-sml_io = "*"
-
-[[pins]]
-sml = { path = "../../sml" }
-
-[[pins]]
-sml_io = { path = "../../sml_io" }
+sml_io = "=0.1.0"

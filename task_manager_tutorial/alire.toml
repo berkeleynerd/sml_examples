@@ -2,24 +2,18 @@ name = "task_tutorial_test"
 description = "Testing the SML Task Manager Tutorial"
 version = "0.1.0"
 
-authors = ["Tutorial Tester"]
-maintainers = ["Tutorial Tester <test@example.com>"]
-maintainers-logins = ["tester"]
-licenses = "MIT"
+authors = ["Rebecca Wise"]
+maintainers = ["Rebecca Wise <rebecca@berkeleynerd.com>"]
+maintainers-logins = ["berkeleynerd"]
+licenses = "MIT OR Apache-2.0 WITH LLVM-exception"
 
-executables = ["task_tutorial_test", "lesson_2_fixed", "lesson_3_building", "lesson_4_transformation", "lesson_5_analysis", "test_inline_schema", "test_validation_final", "test_validation_diagnostic", "test_minimal_validation", "debug_schema_loader", "test_fix_verification", "test_loader_vs_direct"]
+executables = ["task_tutorial_test", "lesson_2_fixed", "lesson_3_building", "lesson_4_transformation", "test_validation_final", "test_validation_diagnostic", "test_minimal_validation", "debug_schema_loader", "test_fix_verification", "test_loader_vs_direct"]
 
 [build-switches]
 "*".ada_version = "Ada2022"
 
 [[depends-on]]
-sml = "*"
+sml = "=0.1.0"
 
 [[depends-on]]
-sml_io = "*"
-
-[[pins]]
-sml = { path = "../sml" }
-
-[[pins]]
-sml_io = { path = "../sml_io" }
+sml_io = "=0.1.0"

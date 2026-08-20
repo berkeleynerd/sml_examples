@@ -29,8 +29,8 @@ alire.toml:
 
 ```toml
 [[depends-on]]
-sml = "^0.1.0"
+sml = "=0.1.0"
 
 [[depends-on]]
-sml_io = "^0.1.0"
+sml_io = "=0.1.0"
 ```
