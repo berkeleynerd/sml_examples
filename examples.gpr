@@ -22,9 +22,4 @@ project Examples is
       for Executable ("test_schema_loader.adb") use "test_schema_loader";
    end Builder;
 
-   package Linker is
-      for Linker_Options use ("-L/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib",
-         "-Wl,-stack_size,0x2000000");
-   end Linker;
-
 end Examples;

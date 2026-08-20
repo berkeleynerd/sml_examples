@@ -1,14 +1,15 @@
 name = "sml_examples"
 description = "SML examples and integration demos"
-version = "0.1.0-dev"
+version = "0.1.0"
 
-authors = ["Your Name"]
-maintainers = ["Your Name <example@example.com>"]
+authors = ["Rebecca Wise"]
+maintainers = ["Rebecca Wise <rebecca@berkeleynerd.com>"]
+maintainers-logins = ["berkeleynerd"]
 licenses = "MIT OR Apache-2.0 WITH LLVM-exception"
-website = ""
+website = "https://git.idril.is/rebecca/sml_examples"
 tags = ["sml", "examples", "schema", "io"]
 
-executables = ["sml_example", "schema_validation_example", "test_schema_loader", "task_manager_tutorial"]
+executables = ["sml_example", "schema_validation_example", "test_schema_loader"]
 project-files = ["examples.gpr"]
 
 [build-switches]
@@ -23,16 +24,10 @@ project-files = ["examples.gpr"]
 ]
 
 [[depends-on]]
-sml = "^0.1.0-dev"
+sml = "=0.1.0"
 
 [[depends-on]]
-sml_io = "^0.1.0-dev"
-
-[[pins]]
-sml = { path = "../sml" }
-
-[[pins]]
-sml_io = { path = "../sml_io" }
+sml_io = "=0.1.0"
 
 [[actions]]
 type = "test"
